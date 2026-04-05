@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asset&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Bitcount+Prop+Double:wght@100..900&family=Bungee&family=Eater&family=Mountains+of+Christmas:wght@400;700&family=Playwrite+DK+Uloopet+Guides&family=Shadows+Into+Light&family=Ultra&display=swap');
+
+body {
+    font-family: 'Archivo Black';
+    text-align: center;
+    display: flex;
+}
+div {
+    height: 250px;
+    width: 600px;
+    background-color: black;
+    color: white;
+    border: 3px solid red;
+    border-radius: 9%;
+}
+.a {
+    text-align: center;
+}
+.v {
+    height: 250px;
+    border: 2px solid;
+    color: red;
+}

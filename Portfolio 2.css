@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asset&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Bitcount+Prop+Double:wght@100..900&family=Bungee&family=Eater&family=Mountains+of+Christmas:wght@400;700&family=Shadows+Into+Light&family=Ultra&display=swap');
+
+* {
+    font-family: 'Archivo Black';
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    padding: 10px 50px 10px 10px;
+    align-items: center;
+    grid-area: h;
+}
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+header ul li {
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px;
+}
+header ul li:hover {
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+footer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    grid-area: f;
+}
+
+aside {
+    grid-area: s;
+}
+aside ul{
+    list-style: none;
+}
+main {
+    grid-area: m;
+    color: salmon;
+    background-color: skyblue;
+}
+.m {
+    display: grid;
+    grid-template-areas:
+    'h h'
+    's m'
+    'f f';
+    height: 100vh;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+main div {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+main div:hover{
+  background-color: silver;  
+  transition: 0.3s;
+  border-radius: 5px;
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 15px;
+}
+main div:active {
+    background-color: rgb(42, 167, 0);
+    transform: scale(0.9);
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 20px 40px;
+}
